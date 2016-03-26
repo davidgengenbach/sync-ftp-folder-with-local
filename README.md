@@ -1,5 +1,7 @@
 # sync-ftp-folder-with-local
 
+```npm install https://github.com/davidgengenbach/sync-ftp-folder-with-local --save```
+
 Used to sync a local folder with a remote ftp folder.
 Caches the remote file data and looks for local diffs. Faster than always going through all files on the FTP (recursivly) and getting the timestamp/size of each file every time.
 Saves a lot of time when there are a lot of folders/files on the ftp (eg. wordpress).
