@@ -17,8 +17,7 @@ Saves a lot of time when there are a lot of folders/files on the ftp (eg. wordpr
     "host": "host.de",
     "port": 21,
     "user": "USER",
-    "pass": "PASSWORD", // ftp password
-    "password": "PASSWORD_HERE_AGIN", // again - will change that
+    "password": "FTP_PASSWORD",
     "connections": "1",
     "ignore": [".git", "tmp/*", ".DS_Store", "*.less.cache", "__MACOSX"], // files to ignore
     "localCache": "ftp-cache" // local path to the place where the server file cache (timestamp/sizes of the remote files) will be placed and read

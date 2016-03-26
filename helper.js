@@ -2,11 +2,12 @@ var ftp = require('ftp');
 var R = require('ramda');
 var Bluebird = require('bluebird');
 var ftpsync = require('ftpsync');
-var ftpConfig;
+
 var fs = require('fs');
 var path = require('path');
 var executionPath = process.cwd();
 
+var ftpConfig;
 var ftpClient;
 
 var encoding = {
@@ -23,6 +24,7 @@ module.exports = {
         ftpConfig = require(path.join(executionPath, configPath));
         ftpConfig.local = path.join(executionPath, ftpConfig.local);
         ftpConfig.localCache = path.join(executionPath, ftpConfig.localCache);
+        ftpConfig.pass = ftpConfig.password;
 
         ftpsync.settings = ftpConfig;
     },

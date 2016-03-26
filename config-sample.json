@@ -1,12 +1,11 @@
 {
-    "local": "dist",
+    "local": "LOCAL",
     "remote": "REMOTE",
-    "host": "HOST",
+    "host": "host.de",
     "port": 21,
     "user": "USER",
-    "pass": "PASSWORD",
-    "password": "PASSWORD_HERE_AGIN",
-    "connections": "2",
+    "password": "FTP_PASSWORD",
+    "connections": "1",
     "ignore": [".git", "tmp/*", ".DS_Store", "*.less.cache", "__MACOSX"],
-    "localCache": "CACHE_LOCATION"
+    "localCache": "ftp-cache"
 }
