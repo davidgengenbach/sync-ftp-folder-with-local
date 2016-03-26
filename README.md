@@ -25,7 +25,7 @@ Saves a lot of time when there are a lot of folders/files on the ftp (eg. wordpr
 }
 ```
 1. Create the ```ftp-cache``` folder from this newly created ```ftp-config.json```.
-1. Run ```$(npm bin)/ftp-upload sync-remote ftp-config.json``` to start getting the remote information from the server - this has to be done once and after that every time when there are changes on the server that are not done by this script! (= the cached information is not valid anymore)
+1. Run ```$(npm bin)/ftp-upload sync-remote ftp-config.json``` to start getting the remote information from the server - this has to be done once and when there are changes on the server that are not done by this script! (= the cached remote information is not valid anymore)
 1. Run ```$(npm bin)/ftp-upload sync-remote-from-local ftp-config.json``` every time you want to sync the remote ftp with the local changes.
 
 ### Usage at your own risk :stuck_out_tongue:
