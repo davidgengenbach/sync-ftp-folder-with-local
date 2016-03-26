@@ -13,7 +13,8 @@ module.exports = {
         console.log(ftpConfig);
         return helper
             .setupFTP()
-            .then(fn);
+            .then(fn)
+            .finally(helper.closeFTPClient);
     }
 };
 
@@ -29,7 +30,8 @@ function syncFromRemoteDiff() {
         // Update remote-files store - remote is now synced with local again
         .then(helper.getLocalFiles)
         .then(R.prop('files'))
-        .then(helper.setCache('remote-files.json'));
+        .then(helper.setCache('remote-files.json'))
+        .finally(helper.closeFTPClient);
 }
 
 function syncLocalChangesWithRemote() {

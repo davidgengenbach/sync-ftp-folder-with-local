@@ -73,6 +73,8 @@ module.exports = {
     closeFTPClient: function() {
         if (ftpClient && ftpClient.end)
             ftpClient.end();
+
+        ftpClient = null;
     },
     normalizeFilename: function(str) {
         var replacements = [];
