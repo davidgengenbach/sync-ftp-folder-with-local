@@ -1,0 +1,23 @@
+{
+    "name": "sync-ftp-folder-with-local",
+    "author": "David Gengenbach <davidgengenbach@gmx.de>",
+    "bin": {
+        "ftp-upload": "cli.js"
+    },
+    "dependencies": {
+        "bluebird": "^2.10.2",
+        "commander": "^2.8.1",
+        "ftp": "^0.3.10",
+        "ftpsync": "^0.1.7",
+        "ramda": "^0.17.1"
+    },
+    "devDependencies": {},
+    "keywords": [
+        "ftp",
+        "upload"
+    ],
+    "license": "ISC",
+
+    "scripts": {},
+    "version": "0.1.0"
+}

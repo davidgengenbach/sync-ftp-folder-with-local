@@ -1,0 +1,12 @@
+{
+    "local": "dist",
+    "remote": "REMOTE",
+    "host": "HOST",
+    "port": 21,
+    "user": "USER",
+    "pass": "PASSWORD",
+    "password": "PASSWORD_HERE_AGIN",
+    "connections": "2",
+    "ignore": [".git", "tmp/*", ".DS_Store", "*.less.cache", "__MACOSX"],
+    "localCache": "CACHE_LOCATION"
+}
